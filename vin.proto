@@ -1,0 +1,17 @@
+// myservice.proto
+
+syntax = "proto3";
+
+package myproject;
+
+service MyService {
+  rpc DoSomething(MyRequest) returns (MyResponse) {}
+}
+
+message MyRequest {
+  string request_parameter = 1;
+}
+
+message MyResponse {
+  string response_parameter = 1;
+}
